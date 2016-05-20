@@ -19,10 +19,10 @@ public class MailUtil {
     protected static void sendMail(String title, String content, List<String> tos) throws UnsupportedEncodingException {
 
 
-        String host = "smtpcloud.sohu.com";
-        String username = "postmaster@focus-mobile-report.sendcloud.org";
-        String password = "NTJCftNVwBZF";
-        String from = "postmaster@focus-mobile-report.sendcloud.org";
+        String host = "邮箱主机";
+        String username = "账号";
+        String password = "密码";
+        String from = "from名称";
         int port = 25;
 
         Properties props = System.getProperties();
@@ -48,7 +48,7 @@ public class MailUtil {
 
             String nick = "";
             try {
-                nick = javax.mail.internet.MimeUtility.encodeText("支付监控系统", "utf-8", null);
+                nick = javax.mail.internet.MimeUtility.encodeText("监控系统", "utf-8", null);
             } catch (UnsupportedEncodingException e) {
                 e.printStackTrace();
             }
